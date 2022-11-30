@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalogueClockAngle.Tests", "AnalogueClockAngle.Tests\AnalogueClockAngle.Tests.csproj", "{8D12FD7B-744D-4549-9A5E-35108F1E7C4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculators", "Calculators\Calculators.csproj", "{D087ED07-DB80-40DD-AF59-ADB42B8C5AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalogueClockAngle", "AnalogueClockAngle\AnalogueClockAngle.csproj", "{BB141C4F-6CC4-4244-BC01-8D3F89F0971E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D12FD7B-744D-4549-9A5E-35108F1E7C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D12FD7B-744D-4549-9A5E-35108F1E7C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D12FD7B-744D-4549-9A5E-35108F1E7C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D12FD7B-744D-4549-9A5E-35108F1E7C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D087ED07-DB80-40DD-AF59-ADB42B8C5AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D087ED07-DB80-40DD-AF59-ADB42B8C5AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D087ED07-DB80-40DD-AF59-ADB42B8C5AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D087ED07-DB80-40DD-AF59-ADB42B8C5AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB141C4F-6CC4-4244-BC01-8D3F89F0971E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB141C4F-6CC4-4244-BC01-8D3F89F0971E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB141C4F-6CC4-4244-BC01-8D3F89F0971E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB141C4F-6CC4-4244-BC01-8D3F89F0971E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
