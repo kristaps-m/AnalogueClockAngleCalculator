@@ -68,4 +68,58 @@ public class GetAnalogueClockAngle_Tests
         // Assert
         result.Should().Be(178.5);
     }
+    
+    [TestMethod]
+    public void IsUserInputCorrect_InputToLong_ShouldReturnCorrectString()
+    {
+        // Act
+        var result = UserInputHandling.IsUserInputCorrect("******!!!");
+        // Assert
+        result.Should().Be($"You entered something to much max input length is 5!\nYour input lenght is 9");
+    }
+    
+    [TestMethod]
+    public void IsUserInputCorrect_InputToShort_ShouldReturnCorrectString()
+    {
+        // Act
+        var result = UserInputHandling.IsUserInputCorrect("1");
+        // Assert
+        result.Should().Be("Something is missing your input lenght is not 5, but 1");
+    }
+    
+    [TestMethod]
+    public void IsUserInputCorrect_ColonIsNotThere_ShouldReturnCorrectString()
+    {
+        // Act
+        var result = UserInputHandling.IsUserInputCorrect("12*12");
+        // Assert
+        result.Should().Be("You forgot to add ':' between numbers");
+    }
+    
+    [TestMethod]
+    public void IsUserInputCorrect_DigitsAreNotEntered_ShouldReturnCorrectString()
+    {
+        // Act
+        var result = UserInputHandling.IsUserInputCorrect("**:12");
+        // Assert
+        result.Should().Be("Your entered format is wrong enter 2 digits ':' and another 2 digits!");
+    }
+    
+    [TestMethod]
+    public void IsUserInputCorrect_HourToBigOrSmall_ShouldReturnCorrectString()
+    {
+        // Act
+        var result = UserInputHandling.IsUserInputCorrect("99:12");
+        // Assert
+        result.Should().Be("Your entered hour to big or to small pleases check your input again!");
+    }
+    
+    [TestMethod]
+    public void IsUserInputCorrect_MinuteToBigOrSmall_ShouldReturnCorrectString()
+    {
+        // Act
+        var result = UserInputHandling.IsUserInputCorrect("11:99");
+        // Assert
+        result.Should().Be("Your entered minute to big or to small pleases check your input again!");
+    }
 }

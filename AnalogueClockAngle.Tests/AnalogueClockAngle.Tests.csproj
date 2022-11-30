@@ -19,6 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\AnalogueClockAngle\AnalogueClockAngle.csproj" />
       <ProjectReference Include="..\Calculators\Calculators.csproj" />
     </ItemGroup>
 
